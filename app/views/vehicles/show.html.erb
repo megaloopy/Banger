@@ -1,2 +1,5 @@
-<h1>Vehicles#show</h1>
-<p>Find me in app/views/vehicles/show.html.erb</p>
+<h1><%= @vehicle.owner_name %>'s <%= @vehicle.nick_name %></h1>
+<p>
+   <%= @vehicle.year %> &ndash; <%= @vehicle.make %>, <%= @vehicle.model %>
+   <%= @vehicle.original_odometer %>
+</p>

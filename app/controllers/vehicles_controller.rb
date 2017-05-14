@@ -11,13 +11,14 @@ class VehiclesController < ApplicationController
   def create
     @vehicle = Vehicle.new(vehicle_params)
     if @vehicle.save
-      redirect @vehicle
+      redirect_to @vehicle
     else
       render 'new'
     end  
   end
 
   def show
+    @vehicle = Vehicle.find(params[:id])
   end
 
   def edit
@@ -32,7 +33,7 @@ class VehiclesController < ApplicationController
   private
   
   def vehicle_params
-    params.require(:vehicle)
+    params.require(:vehicle).permit(:owner_name, :nick_name, :year, :make, :model, :original_odometer)
   end
   
   
