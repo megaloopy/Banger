@@ -1,4 +1,5 @@
 class VehiclesController < ApplicationController
+  before_action :find_vehicle, only: [:show, :edit, :update, :destroy]
   
   def index
     @vehicles = Vehicle.all
@@ -18,15 +19,12 @@ class VehiclesController < ApplicationController
   end
 
   def show
-    @vehicle = Vehicle.find(params[:id])
   end
 
   def edit
-    @vehicle = Vehicle.find(params[:id])
   end
 
   def update
-    @vehicle = Vehicle.find(params[:id])
     if @vehicle.update(vehicle_params)
       redirect_to @vehicle
     else
@@ -35,19 +33,22 @@ class VehiclesController < ApplicationController
   end
 
   def destroy
-    @vehicle = Vehicle.find(params[:id])
     if @vehicle.delete
       redirect_to root_path
-    else 
+    else
       render :show
     end
   end
   
   private
   
-  def vehicle_params
-    params.require(:vehicle).permit(:owner_name, :nick_name, :year, :make, :model, :original_odometer)
-  end
+    def vehicle_params
+      params.require(:vehicle).permit(:owner_name, :nick_name, :year, :make, :model, :original_odometer)
+    end
+    
+    def find_vehicle
+      @vehicle = Vehicle.find(params[:id])
+    end
   
   
 end
