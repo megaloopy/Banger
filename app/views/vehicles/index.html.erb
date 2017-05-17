@@ -1,4 +1,4 @@
-<h1>Vehicles Index</h1>
+<h1><%= pluralize(@vehicles.count, "Vehicle") %></h1>
 
 <% @vehicles.each do |vehicle| %>
    <h2><%= link_to vehicle.nick_name, vehicle %></h2>

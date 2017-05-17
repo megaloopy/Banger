@@ -3,6 +3,10 @@
    <%= @vehicle.year %> &ndash; <%= @vehicle.make %>, <%= @vehicle.model %>
    <%= @vehicle.original_odometer %>
 </p>
-<p>
-   <%= link_to "Delete", vehicle_path(@vehicle), method: :delete, data: {confirm: "Are you sure?"} %>
-</p>
+<% if @vehicle.user_id == current_user.id %>
+   <p>
+      <%= link_to "Back", root_path %> | 
+      <%= link_to "Edit", edit_vehicle_path(@vehicle) %> | 
+      <%= link_to "Delete", vehicle_path(@vehicle), method: :delete, data: {confirm: "Are you sure?"} %>
+   </p>
+<% end %>
