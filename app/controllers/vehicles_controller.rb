@@ -1,4 +1,5 @@
 class VehiclesController < ApplicationController
+  before_action :authenticate_user!, except: [:index]
   before_action :find_vehicle, only: [:show, :edit, :update, :destroy]
   
   def index
@@ -6,11 +7,12 @@ class VehiclesController < ApplicationController
   end
 
   def new
-    @vehicle = Vehicle.new
+    @vehicle = current_user.vehicles.build
   end
 
   def create
-    @vehicle = Vehicle.new(vehicle_params)
+    @vehicle = current_user.vehicles.build(vehicle_params)
+    
     if @vehicle.save
       redirect_to @vehicle
     else
