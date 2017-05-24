@@ -3,3 +3,4 @@
 - Rodolph setup AWS
 - Stopped in the ActiveRecord section of the carrier wave doc
   (https://github.com/carrierwaveuploader/carrierwave)
+- Added the cw to the vehicle model + migration file

@@ -8,6 +8,7 @@ class VehiclesController < ApplicationController
 
   def new
     @vehicle = current_user.vehicles.build
+    @vehicle.image = params[:file]
   end
 
   def create
