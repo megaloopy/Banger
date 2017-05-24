@@ -8,12 +8,12 @@ class VehiclesController < ApplicationController
 
   def new
     @vehicle = current_user.vehicles.build
-    @vehicle.image = params[:file]
   end
 
   def create
     @vehicle = current_user.vehicles.build(vehicle_params)
-    
+    @vehicle.image = params[:file]
+
     if @vehicle.save
       redirect_to @vehicle
     else
@@ -46,7 +46,7 @@ class VehiclesController < ApplicationController
   private
   
     def vehicle_params
-      params.require(:vehicle).permit(:owner_name, :nick_name, :year, :make, :model, :original_odometer)
+      params.require(:vehicle).permit(:owner_name, :nick_name, :year, :make, :model, :original_odometer, :image)
     end
     
     def find_vehicle

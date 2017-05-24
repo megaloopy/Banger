@@ -2,6 +2,8 @@
 <p>
    <%= @vehicle.year %> &ndash; <%= @vehicle.make %>, <%= @vehicle.model %>
    <%= @vehicle.original_odometer %>
+   <%= image_tag @vehicle.image %>
+   
 </p>
 <% if @vehicle.user_id == current_user.id %>
    <p>
