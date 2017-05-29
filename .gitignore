@@ -19,3 +19,4 @@
 
 #Ignore README.rdoc - We'll use these for internal notes and referenmce to Trello board
 README.rdoc
+.fog
