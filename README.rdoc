@@ -4,3 +4,5 @@
 - Stopped in the ActiveRecord section of the carrier wave doc
   (https://github.com/carrierwaveuploader/carrierwave)
 - Added the cw to the vehicle model + migration file
+- S3 working
+- S3 presented security vulnerabiliy need to install figgaro
