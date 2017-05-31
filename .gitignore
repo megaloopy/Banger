@@ -20,6 +20,5 @@
 #Ignore README.rdoc - We'll use these for internal notes and referenmce to Trello board
 README.rdoc
 .fog
-/config/initializers/carrierwave.rb
 # Ignore application configuration
 /config/application.yml
