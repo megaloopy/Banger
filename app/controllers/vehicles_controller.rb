@@ -4,7 +4,9 @@ class VehiclesController < ApplicationController
   
   def index
     @vehicles = Vehicle.all
-    @vehicles_user = @vehicles.where(:user_id => current_user.id)
+    
+    @vehicles_user = @vehicles.where(:user_id => current_user)
+    
   end
 
   def new
