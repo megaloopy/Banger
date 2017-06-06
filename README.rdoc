@@ -6,3 +6,4 @@
 - Added the cw to the vehicle model + migration file
 - S3 working
 - S3 presented security vulnerabiliy need to install figgaro
+- Working on Service model

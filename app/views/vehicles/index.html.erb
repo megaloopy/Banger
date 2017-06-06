@@ -1,6 +1,8 @@
-<h1><%= pluralize(@vehicles.count, "Vehicle") %></h1>
+<h1><%= pluralize(@vehicles_user.count, "Vehicle") %></h1>
 
 <% @vehicles.each do |vehicle| %>
-   <h2><%= link_to vehicle.nick_name, vehicle %></h2>
-   <small><%= vehicle.year %> - <%= vehicle.make %>, <%= vehicle.model %></small>
+   <% if current_user == vehicle.user %>
+      <h2><%= link_to vehicle.nick_name, vehicle %></h2>
+      <small><%= vehicle.year %> - <%= vehicle.make %>, <%= vehicle.model %></small>
+   <% end %>
 <% end %>
