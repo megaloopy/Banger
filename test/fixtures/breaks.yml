@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  front: false
+  rear: false
+  service_id: 
+
+two:
+  brand: MyString
+  front: false
+  rear: false
+  service_id: 

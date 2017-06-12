@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  brand: MyString
+  size: MyString
+  front: false
+  rear: false
+  balance: false
+  alignment: false
+  service_id: 
+
+two:
+  brand: MyString
+  size: MyString
+  front: false
+  rear: false
+  balance: false
+  alignment: false
+  service_id: 

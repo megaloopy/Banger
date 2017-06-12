@@ -11,7 +11,58 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170520125810) do
+ActiveRecord::Schema.define(version: 20170612111408) do
+
+  create_table "breaks", force: :cascade do |t|
+    t.string   "brand"
+    t.boolean  "front"
+    t.boolean  "rear"
+    t.integer  "service_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "breaks", ["service_id"], name: "index_breaks_on_service_id"
+
+  create_table "oil_changes", force: :cascade do |t|
+    t.boolean  "filter"
+    t.string   "oil_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "service_id"
+  end
+
+  add_index "oil_changes", ["service_id"], name: "index_oil_changes_on_service_id"
+
+  create_table "services", force: :cascade do |t|
+    t.string   "type"
+    t.integer  "odometer"
+    t.date     "current_service"
+    t.float    "price"
+    t.text     "comments"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.date     "next_service"
+    t.datetime "created_at",      null: false
+    t.datetime "updated_at",      null: false
+    t.integer  "vehicle_id"
+  end
+
+  add_index "services", ["vehicle_id"], name: "index_services_on_vehicle_id"
+
+  create_table "tires", force: :cascade do |t|
+    t.string   "brand"
+    t.string   "size"
+    t.boolean  "front"
+    t.boolean  "rear"
+    t.boolean  "balance"
+    t.boolean  "alignment"
+    t.integer  "service_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "tires", ["service_id"], name: "index_tires_on_service_id"
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
