@@ -1,0 +1,11 @@
+<h1>NEW Service</h1>
+
+<%= simple_form_for @service do |f| %>
+  <%= f.input :type %>
+  <%= f.input :odometer %>
+  <%= f.input :current_service %>
+  <%= f.input :price %>
+  <%= f.input :comments %>
+  <%= f.input :next_service %>
+  <%= f.button :submit %>
+<% end %>

@@ -1,0 +1,2 @@
+class OilChangesController < ApplicationController
+end

@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "vehicles#index"
   
-  resources :vehicles
+  resources :vehicles do
+    member do
+      resources :services
+    end
+  end
   
   
   # The priority is based upon order of creation: first created -> highest priority.

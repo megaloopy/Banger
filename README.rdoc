@@ -7,3 +7,6 @@
 - S3 working
 - S3 presented security vulnerabiliy need to install figgaro
 - Working on Service model and the Types of services (Oil, Tires & Breaks for now)
+- Building Associations + controllers
+- Got base services form up (not tested if it saves to DB)
+  NOTE: neet ot figure out the select tag option for the the type of service on the form.
