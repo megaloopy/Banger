@@ -10,3 +10,4 @@
 - Building Associations + controllers
 - Got base services form up (not tested if it saves to DB)
 - Saved service with service type. Now need to gigure out how to render specific service form (ie: Oil change, tires...)
+- Problem displaying the vehicle nick_name on the service show page (show.html.erb)

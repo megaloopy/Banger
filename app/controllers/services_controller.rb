@@ -1,6 +1,12 @@
 class ServicesController < ApplicationController
+  
   def index
+    @vehicle = Vehicle.find(params[:id])
     @services = Service.all.order('created_at DESC')
+  end
+  
+  def show
+    @service = Service.find(params[:id])
   end
    
   def new
@@ -17,7 +23,6 @@ class ServicesController < ApplicationController
       render :new
     end
   end
-   
    
    
   private
