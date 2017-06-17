@@ -5,7 +5,13 @@ Rails.application.routes.draw do
   
   resources :vehicles do
     member do
-      resources :services
+      resources :services do
+        member do
+          resources :oil_changes
+          resources :tires
+          resources :breaks
+        end
+      end
     end
   end
   

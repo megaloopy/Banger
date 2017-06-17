@@ -9,4 +9,4 @@
 - Working on Service model and the Types of services (Oil, Tires & Breaks for now)
 - Building Associations + controllers
 - Got base services form up (not tested if it saves to DB)
-  NOTE: neet ot figure out the select tag option for the the type of service on the form.
+- Saved service with service type. Now need to gigure out how to render specific service form (ie: Oil change, tires...)

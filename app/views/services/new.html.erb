@@ -1,7 +1,7 @@
 <h1>NEW Service</h1>
 
 <%= simple_form_for @service do |f| %>
-  <%= f.input :type %>
+  <%= f.select:service_option, options_for_select([['Breaks', 'Breaks'], ['Oil Changes','oil Changes'], ['Tire Change', 'tires']]) %>
   <%= f.input :odometer %>
   <%= f.input :current_service %>
   <%= f.input :price %>

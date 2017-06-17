@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170612111408) do
+ActiveRecord::Schema.define(version: 20170617153823) do
 
   create_table "breaks", force: :cascade do |t|
     t.string   "brand"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20170612111408) do
   add_index "oil_changes", ["service_id"], name: "index_oil_changes_on_service_id"
 
   create_table "services", force: :cascade do |t|
-    t.string   "type"
+    t.string   "service_option"
     t.integer  "odometer"
     t.date     "current_service"
     t.float    "price"
