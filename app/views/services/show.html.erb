@@ -1,4 +1,4 @@
-<h1>Service Details for <%= @service.vehicle_id %></h1>
+<h1>Service Details for <%= @service.vehicle.nick_name %></h1>
 
   <%= @service.created_at %><br>
   <%= @service.service_option %><br>
@@ -6,5 +6,4 @@
   <%= @service.current_service %><br>
   <%= @service.price%><br>
   <%= @service.comments%><br>
-  <%= @service.price%><br>
   <%= @service.next_service %><br>

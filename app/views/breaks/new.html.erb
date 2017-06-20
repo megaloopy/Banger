@@ -1,0 +1,6 @@
+<%= simple_form_for @break do |f| %>
+  <%= f.input :brand %>
+  Front Pads: <%= f.check_box :front %> <!-- booleans -->
+  Rear Pads: <%= f.check_box :rear %>  <!-- booleans -->
+  <%= f.button :submit %>
+<% end %>

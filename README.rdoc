@@ -9,5 +9,5 @@
 - Working on Service model and the Types of services (Oil, Tires & Breaks for now)
 - Building Associations + controllers
 - Got base services form up (not tested if it saves to DB)
-- Saved service with service type. Now need to gigure out how to render specific service form (ie: Oil change, tires...)
-- Problem displaying the vehicle nick_name on the service show page (show.html.erb)
+- Saved service with service type. Now need to gigure out how to render specific service form (ie: Oil change, tires..)
+- Created Brakes controller + new view - Have to find correct helper for Boolean
