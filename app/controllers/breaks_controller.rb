@@ -1,4 +1,9 @@
 class BreaksController < ApplicationController
+  before_action :authenticate_user!
+  
+  def index
+    @breaks = Break.all
+  end
   
   def new
     @service = Service.find(params[:id])
@@ -7,7 +12,7 @@ class BreaksController < ApplicationController
   
   def create
     @service = Service.find(params[:id])
-    @break = Break.build(break_params)
+    @break = Break.create(break_params)
       if @break.save
         redirect_to @service
       else
@@ -23,13 +28,9 @@ class BreaksController < ApplicationController
     @break = Break.find(params[:id])
   end
   
-  def index
-    @breaks = Break.all
-  end
-  
   private
   
-  def break_params
-    params.require(:brake).permit(:brand, :front, :rear)
-  end
+    def break_params
+      params.require(:break).permit(:brand, :front, :rear)
+    end
 end

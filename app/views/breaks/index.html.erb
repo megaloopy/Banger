@@ -1,0 +1,9 @@
+<h1>Brakes Service Index</h1>
+
+<% @breaks.each do |b| %>
+  <%= link_to "Details", break_path(b) %>
+  <p>Created: <%= b.created_at %></p>
+  <p>Brand:<%= b.brand %></p>
+  <p>Front: <%= b.front %></p>
+  <p>Rear: <%= b.rear %></p><br>
+<% end %>
