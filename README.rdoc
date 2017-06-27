@@ -12,3 +12,4 @@
 - Saved service with service type. Now need to gigure out how to render specific service form (ie: Oil change, tires..)
 - Created Brakes controller + new view 
 - Sorted Views and routing for the Breaks Service 
+- Added Oil Change service - Have to sort out routing issue when clicking on the serviceLindex "Details" as it changes the vehicle ID

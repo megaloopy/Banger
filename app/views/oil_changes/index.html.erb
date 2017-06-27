@@ -1,0 +1,8 @@
+<h1>Oil Change Service Index</h1>
+
+<% @oil_changes.each do |o| %>
+  <%= link_to "Details", oil_change_path(o) %>
+  <p>Created: <%= o.created_at %></p>
+  <p>Brand:<%= o.oil_brand %></p>
+  <p>Filter: <%= o.filter %></p><br>
+<% end %>

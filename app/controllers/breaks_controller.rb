@@ -1,5 +1,4 @@
 class BreaksController < ApplicationController
-  before_action :authenticate_user!
   
   def index
     @breaks = Break.all

@@ -11,8 +11,8 @@ class ServicesController < ApplicationController
   end
    
   def new
-    # @vehicle = Vehicle.find(params[:vehicle_id])
-    @service = Service.new
+    @vehicle = Vehicle.find(params[:id])
+    @service = @vehicle.services.new
   end 
    
   def create

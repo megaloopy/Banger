@@ -1,0 +1,6 @@
+<h1>New Oil Changes Entry</h1>
+<%= simple_form_for @oil_change do |o| %>
+  <%= o.input :oil_brand %>
+  <%= o.check_box :filter %> <!-- booleans -->
+  <%= o.button :submit %>
+<% end %>
