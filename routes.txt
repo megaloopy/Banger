@@ -1,0 +1,57 @@
+                  Prefix Verb   URI Pattern                                               Controller#Action
+        new_user_session GET    /users/sign_in(.:format)                                  devise/sessions#new
+            user_session POST   /users/sign_in(.:format)                                  devise/sessions#create
+    destroy_user_session DELETE /users/sign_out(.:format)                                 devise/sessions#destroy
+           user_password POST   /users/password(.:format)                                 devise/passwords#create
+       new_user_password GET    /users/password/new(.:format)                             devise/passwords#new
+      edit_user_password GET    /users/password/edit(.:format)                            devise/passwords#edit
+                         PATCH  /users/password(.:format)                                 devise/passwords#update
+                         PUT    /users/password(.:format)                                 devise/passwords#update
+cancel_user_registration GET    /users/cancel(.:format)                                   devise/registrations#cancel
+       user_registration POST   /users(.:format)                                          devise/registrations#create
+   new_user_registration GET    /users/sign_up(.:format)                                  devise/registrations#new
+  edit_user_registration GET    /users/edit(.:format)                                     devise/registrations#edit
+                         PATCH  /users(.:format)                                          devise/registrations#update
+                         PUT    /users(.:format)                                          devise/registrations#update
+                         DELETE /users(.:format)                                          devise/registrations#destroy
+                    root GET    /                                                         vehicles#index
+             oil_changes GET    /vehicles/:id/services/:id/oil_changes(.:format)          oil_changes#index
+                         POST   /vehicles/:id/services/:id/oil_changes(.:format)          oil_changes#create
+          new_oil_change GET    /vehicles/:id/services/:id/oil_changes/new(.:format)      oil_changes#new
+         edit_oil_change GET    /vehicles/:id/services/:id/oil_changes/:id/edit(.:format) oil_changes#edit
+              oil_change GET    /vehicles/:id/services/:id/oil_changes/:id(.:format)      oil_changes#show
+                         PATCH  /vehicles/:id/services/:id/oil_changes/:id(.:format)      oil_changes#update
+                         PUT    /vehicles/:id/services/:id/oil_changes/:id(.:format)      oil_changes#update
+                         DELETE /vehicles/:id/services/:id/oil_changes/:id(.:format)      oil_changes#destroy
+                   tires GET    /vehicles/:id/services/:id/tires(.:format)                tires#index
+                         POST   /vehicles/:id/services/:id/tires(.:format)                tires#create
+                new_tire GET    /vehicles/:id/services/:id/tires/new(.:format)            tires#new
+               edit_tire GET    /vehicles/:id/services/:id/tires/:id/edit(.:format)       tires#edit
+                    tire GET    /vehicles/:id/services/:id/tires/:id(.:format)            tires#show
+                         PATCH  /vehicles/:id/services/:id/tires/:id(.:format)            tires#update
+                         PUT    /vehicles/:id/services/:id/tires/:id(.:format)            tires#update
+                         DELETE /vehicles/:id/services/:id/tires/:id(.:format)            tires#destroy
+                  breaks GET    /vehicles/:id/services/:id/breaks(.:format)               breaks#index
+                         POST   /vehicles/:id/services/:id/breaks(.:format)               breaks#create
+               new_break GET    /vehicles/:id/services/:id/breaks/new(.:format)           breaks#new
+              edit_break GET    /vehicles/:id/services/:id/breaks/:id/edit(.:format)      breaks#edit
+                   break GET    /vehicles/:id/services/:id/breaks/:id(.:format)           breaks#show
+                         PATCH  /vehicles/:id/services/:id/breaks/:id(.:format)           breaks#update
+                         PUT    /vehicles/:id/services/:id/breaks/:id(.:format)           breaks#update
+                         DELETE /vehicles/:id/services/:id/breaks/:id(.:format)           breaks#destroy
+                services GET    /vehicles/:id/services(.:format)                          services#index
+                         POST   /vehicles/:id/services(.:format)                          services#create
+             new_service GET    /vehicles/:id/services/new(.:format)                      services#new
+            edit_service GET    /vehicles/:id/services/:id/edit(.:format)                 services#edit
+                 service GET    /vehicles/:id/services/:id(.:format)                      services#show
+                         PATCH  /vehicles/:id/services/:id(.:format)                      services#update
+                         PUT    /vehicles/:id/services/:id(.:format)                      services#update
+                         DELETE /vehicles/:id/services/:id(.:format)                      services#destroy
+                vehicles GET    /vehicles(.:format)                                       vehicles#index
+                         POST   /vehicles(.:format)                                       vehicles#create
+             new_vehicle GET    /vehicles/new(.:format)                                   vehicles#new
+            edit_vehicle GET    /vehicles/:id/edit(.:format)                              vehicles#edit
+                 vehicle GET    /vehicles/:id(.:format)                                   vehicles#show
+                         PATCH  /vehicles/:id(.:format)                                   vehicles#update
+                         PUT    /vehicles/:id(.:format)                                   vehicles#update
+                         DELETE /vehicles/:id(.:format)                                   vehicles#destroy
