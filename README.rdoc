@@ -13,4 +13,4 @@
 - Created Brakes controller + new view 
 - Sorted Views and routing for the Breaks Service 
 - Added Oil Change service - Have to sort out routing issue when clicking on the serviceLindex "Details" as it changes the vehicle ID
-- Changed One to many association to one to one association in the Service model. Still have to sort out routing issue Vehicle_ID/Service_ID 
+- Added Nested routes for the vehicle / service models
