@@ -1,9 +1,16 @@
 <h1>Services</h1>
 
-<% @vehicle.services.each do |s| %>
-  <%= link_to "Details", service_path(s) %>
+<%# @vehicle.services.each do |s| %>
+  <%#= link_to "Details", service_path(s) %>
+  <%#= s.created_at %>
+  <%#= s.service_option %>
+  <%#= s.odometer %>
+  <%#= s.next_service %><br>
+<%# end %>
+
+<% @services.each do |s| %>
+  <%= link_to "Details", vehicle_service_path(@vehicle,s) %>
   <%= s.created_at %>
   <%= s.service_option %>
-  <%= s.odometer %>
-  <%= s.next_service %><br>
+  <%= s.odometer %><br>
 <% end %>

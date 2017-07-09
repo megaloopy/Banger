@@ -2,21 +2,22 @@ class ServicesController < ApplicationController
   # before_action :authenticate_user!
   
   def index
-    @vehicle = Vehicle.find(params[:id])
-    @services = Service.all.order('created_at DESC')
+    @vehicle = Vehicle.find(params[:vehicle_id])
+    @services = @vehicle.services.order('created_at DESC')
   end
   
   def show
-    @service = Service.find(params[:id])
+    @vehicle = Vehicle.find(params[:vehicle_id])
+    @service = @vehicle.services.find(params[:id])
   end
-   
+    
   def new
-    @vehicle = Vehicle.find(params[:id])
+    @vehicle = Vehicle.find(params[:vehicle_id])
     @service = @vehicle.services.new
   end 
    
   def create
-    @vehicle = Vehicle.find(params[:id])
+    @vehicle = Vehicle.find(params[:vehicle_id])
     @service = @vehicle.services.build(service_params)
     if @service.save
       redirect_to @vehicle

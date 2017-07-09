@@ -1,5 +1,5 @@
 <h1><%= @vehicle.owner_name %>'s <%= @vehicle.nick_name %></h1>
-<%= link_to image_tag(@vehicle.image), services_path(@vehicle, @services) %>
+<%= link_to image_tag(@vehicle.image), vehicle_services_path(@vehicle) %>
 <p>
    <%= @vehicle.year %> &ndash; <%= @vehicle.make %>, <%= @vehicle.model %>
    <%= @vehicle.original_odometer %>
