@@ -14,3 +14,4 @@
 - Sorted Views and routing for the Breaks Service 
 - Added Oil Change service - Have to sort out routing issue when clicking on the serviceLindex "Details" as it changes the vehicle ID
 - Added Nested routes for the vehicle / service models
+- Added our_navbar scc file to start styling default navbar
