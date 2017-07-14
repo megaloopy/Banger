@@ -15,6 +15,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Added Gems
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+gem 'sprockets-rails', '>= 2.1.4' 
 gem 'simple_form'
 gem 'devise', '~> 4.2', '>= 4.2.1'
 gem 'carrierwave', '~> 1.0'
