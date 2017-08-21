@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  root to: "vehicles#index"
+  root to: "landers#home"
   
   resources :vehicles do
     resources :services do
