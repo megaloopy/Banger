@@ -1,8 +1,44 @@
-// Place all the styles related to the landers controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+/* ----------------------
+GLOBAL
+-----------------------*/
+$carousel-gradient: linear-gradient(rgba(28,29,33,1),rgba(0,0,0,0));
+$orange: #ff7800;
+
+.orange-button {
+  margin-top: 50px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  background: $orange;
+  color: #f2f2f2;
+  // background: rgba(0,0,0,0);
+  // color: $orange;a
+  border: $orange solid 1px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+button:focus, a:focus, input:focus {
+  outline: none;
+}
 
 
+
+/* ----------------------
+CAROUSEL
+-----------------------*/
 .carousel .carousel .item .active {
   height: 600px;
 }
@@ -33,7 +69,18 @@
     height:100%;
     top:0; 
     left:0;
-    background:rgba(0,0,0,0.6);
+    background: $carousel-gradient;
+}
+.slider-title{
+  font-size: 3em;
 }
 
-// background-image: linear-gradient(top, rgba(28,29,33,1) 8%,rgba(0,0,0,0) 100%);
+.slider-text{
+  margin-top: 50px;
+  font-size: 1.25em;
+}
+
+/* ----------------------
+BODY
+-----------------------*/
+
