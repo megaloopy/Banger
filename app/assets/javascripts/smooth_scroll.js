@@ -17,5 +17,5 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     var pos = $id.offset().top;
     
     // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
+    $('body, html').animate({scrollTop: pos}, 1000);
 });

@@ -1,6 +1,7 @@
 /* ----------------------
 GLOBAL
 -----------------------*/
+
 $carousel-gradient: linear-gradient(rgba(28,29,33,1),rgba(0,0,0,0));
 $orange: #ff7800;
 
@@ -80,7 +81,29 @@ CAROUSEL
   font-size: 1.25em;
 }
 
+/* ---------------------- BODY SECTIONS -----------------------*/
+body, .container-fluid {
+  margin: 0 auto;
+  padding: 0;
+}
+
 /* ----------------------
-BODY
+WHATCH VIDEO
 -----------------------*/
+
+.demo-movie {
+  display: table;
+  width: 100%;
+  height: 550px;
+  background: #f2f2f2 url(/assets/movie-demo-image.jpg) no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+.demo-info {
+  display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
 
