@@ -1,8 +1,10 @@
 <div class="container-fluid">
-<header>
+<div class="row">
+  <header>
   <div class="main-slider">
   </div>
 </header>
+</div>
 
 <!--
 <section class="about">
@@ -18,68 +20,68 @@
 -->
 
 <section class="demo-movie">
-  <div class="demo-info">
-    <p><i class="glyphicon glyphicon-play"></i></p>
+  <div class="demo-info row">
+    <span class="fa fa-play fa-4x" aria-hidden="true"></span>
     <p>watch a demo</p>
   </div>
 </section>
 
-<section class="features" id="features">
-  <%= image_tag("icons/diagnostic.png", :alt => "workshop") %>
-  <h2 class="title" id="banger-features">features</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit consequatur iusto.</p>
-  <hr class="small-rule">
-  <ul id="top-row">
-    <li>
+
+<section class="features container" id="features">
+  <div class="feature-title row">
+    <h2 class="title" id="banger-features">features</h2>
+  <p>This app is packed with cool features you'll absolutely adore</p>
+  </div>
+  
+  <ul class="row" id="top-row">
+    <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
+      <%= image_tag("icons/diagnostic.png", :alt => "service tracker") %>
       <h3 class="title" id="feature-titles">car service tracker</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>
-        elit. Ab sapiente deserunt ut enim praesentium fugit,<br>
-        esse quo ducimus ea odio repudiandae, aut beatae</p>
+      <p>You will be able to follow your vehicle's complete service history at a glance</p>
     </li>
-    <li>
+    <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
+      <%= image_tag("icons/geolocation.png", :alt => "geolocation enabled") %>
       <h3 class="title" id="feature-titles">geo-targeted discounts</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>
-        elit. Ab sapiente deserunt ut enim praesentium fugit,<br>
-        esse quo ducimus ea odio repudiandae, aut beatae</p>
+      <p>Find your local area's best part deals and discounts</p>
     </li>
-    <li>
+    <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
+      <%= image_tag("icons/mobile_friendly.png", :alt => "mobile friendly") %>
       <h3 class="title" id="feature-titles">mobile friendly</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>
-        elit. Ab sapiente deserunt ut enim praesentium fugit,<br>
-        esse quo ducimus ea odio repudiandae, aut beatae</p>
+      <p>Here at Banger we LOVE our mobile device, therefore we've made the app mobile first
+      - we hope you'll enjoy it as much as we do</p>
     </li>
   </ul>
-  <ul id="bottom-row">
-    <li>
+  <ul class="row" id="bottom-row">
+    <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
+      <%= image_tag("icons/chat.png", :alt => "chat + connect") %>
       <h3 class="title" id="feature-titles">chat + connect</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>
-        elit. Ab sapiente deserunt ut enim praesentium fugit,<br>
-        esse quo ducimus ea odio repudiandae, aut beatae</p>
+      <p>Chat and connect in real-time with other members of the community <br>
+          using our user friendly BangConnect chat engine</p>
     </li>
-    <li>
+    <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
+      <%= image_tag("icons/forums.png", :alt => "forums") %>
       <h3 class="title" id="feature-titles">forums and classifieds</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>
-        elit. Ab sapiente deserunt ut enim praesentium fugit,<br>
-        esse quo ducimus ea odio repudiandae, aut beatae</p>
+      <p>Wanna go deeper than a chat? Have some important question you want to ask the community? <br>
+         Post here your questions and classified for FREE</p>
     </li>
-    <li>
+    <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
-      <h3 class="title" id="feature-titles">relevant coupons and discounts</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing<br>
-        elit. Ab sapiente deserunt ut enim praesentium fugit,<br>
-        esse quo ducimus ea odio repudiandae, aut beatae</p>
+      <%= image_tag("icons/coupons.png", :alt => "coupons") %>
+      <h3 class="title" id="feature-titles">coupons and discounts</h3>
+      <p>Every week, our dedicated Banger team puts on offer the best deals and coupons
+         available in your area</p>
     </li>
   </ul>
 </section>
 
 <section class="members">
-  <h2 class="title" id="some-members-title">About Banger</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+  <span class="glyphicon glyphicon-"></span>
+  <h2 class="title" id="some-members-title">Some of our members</h2>
   <hr class="small-rule">
   <ul>
     <li>

@@ -22,6 +22,7 @@ gem 'carrierwave', '~> 1.0'
 gem 'fog', require: 'fog/aws'
 gem "mini_magick"
 gem "figaro"
+gem 'font-awesome-sass'
 
 
 

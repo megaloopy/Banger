@@ -4,6 +4,7 @@ GLOBAL
 
 $carousel-gradient: linear-gradient(rgba(28,29,33,1),rgba(0,0,0,0));
 $orange: #ff7800;
+$watch-a-demo-gradient: linear-gradient(0deg,rgba(255,120,0,0.6),rgba(255,120,0,0.6));
 
 .orange-button {
   margin-top: 50px;
@@ -85,8 +86,13 @@ CAROUSEL
 body, .container-fluid {
   margin: 0 auto;
   padding: 0;
+  
+  ul {
+   list-style-type: none;
+   padding: 0;
+  } 
 }
-
+ 
 /* ----------------------
 WHATCH VIDEO
 -----------------------*/
@@ -95,7 +101,7 @@ WHATCH VIDEO
   display: table;
   width: 100%;
   height: 550px;
-  background: #f2f2f2 url(/assets/movie-demo-image.jpg) no-repeat center top;
+  background: $watch-a-demo-gradient, url(/assets/movie-demo-image.jpg) no-repeat center top;
   background-size: cover;
   text-align: center;
   color: #f2f2f2;
@@ -103,8 +109,8 @@ WHATCH VIDEO
 
 .demo-info {
   display: table-cell;
-    vertical-align: middle;
-    text-align: center;
+  vertical-align: middle;
+  text-align: center;
 }
 
 .features {
@@ -115,3 +121,22 @@ WHATCH VIDEO
     height: auto;
   }
 }
+
+.demo-info span {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.fa {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+
+/* ----------------------
+FATURES
+-----------------------*/
+
