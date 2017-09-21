@@ -122,21 +122,26 @@ WHATCH VIDEO
   }
 }
 
-.demo-info span {
+.demo-info .fa{
   width: 100px;
   height: 100px;
   border: 4px solid #f2f2f2;
   border-radius: 50%;
 }
 
-.fa {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+ .fa-4x {
+     font-size: 4.5em !important;    
+     line-height:inherit !important;
+     }
+
+.demo-info p {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 2.5%;
 }
 
 
 /* ----------------------
-FATURES
+FEATURES
 -----------------------*/
 
