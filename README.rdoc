@@ -15,3 +15,9 @@
 - Added Oil Change service - Have to sort out routing issue when clicking on the serviceLindex "Details" as it changes the vehicle ID
 - Added Nested routes for the vehicle / service models
 - Added our_navbar scc file to start styling default navbar
+
+10/18/17
+- Problems with the unsplash API ... can't get the random picture and
+  author name within the same method to make one call in the fron-end
+  and pull both pieces of data from the object
+  

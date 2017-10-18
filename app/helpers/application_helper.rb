@@ -15,4 +15,14 @@ module ApplicationHelper
     end
   end
   
+  # @@photo = Unsplash::Photo.random(query:"cars")
+  
+  # def show_photo(size)
+  #   @@photo[:urls][size.to_sym]
+  # end
+
+  # def show_author
+  #   @@photo.user.name
+  # end
+  
 end
