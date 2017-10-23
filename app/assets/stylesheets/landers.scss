@@ -5,6 +5,7 @@ GLOBAL
 $carousel-gradient: linear-gradient(rgba(28,29,33,1),rgba(0,0,0,0));
 $orange: #ff7800;
 $watch-a-demo-gradient: linear-gradient(0deg,rgba(255,120,0,0.6),rgba(255,120,0,0.6));
+$members-blk: linear-gradient(0deg,rgba(0,0,0,0.75),rgba(0,0,0,0.75));
 
 .orange-button {
   margin-top: 50px;
@@ -160,3 +161,49 @@ FEATURES
 //     font-color: $orange;
 //   }
 
+
+
+/* ----------------------
+MEMBERS
+-----------------------*/
+
+.members {
+  display: table;
+  width: 100%;
+  height: 550px;
+  background: $members-blk, url(/assets/member_bg_1600x712.jpg) no-repeat center top;
+  background-size: cover;
+  text-align: center;
+  color: #f2f2f2;
+}
+
+#button-members {
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+
+/* ----------------------
+QUESTIONS SECTION
+-----------------------*/
+
+.test {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: red;
+  &:hover{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.thumbnail:hover {
+    position:relative;
+    top:-25px;
+    left:-35px;
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}

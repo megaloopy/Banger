@@ -33,7 +33,7 @@
   <p class="col-xs-12">This app is packed with cool features you'll absolutely adore</p>
   </div>
   
-  <ul class="row" id="top-row">
+  <ul class="row">
     <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
       <%= image_tag("icons/diagnostic.png", :alt => "service tracker") %>
@@ -54,7 +54,7 @@
       - we hope you'll enjoy it as much as we do</p>
     </li>
   </ul>
-  <ul class="row" id="bottom-row">
+  <ul class="row" >
     <li class="col-xs-12 col-md-4">
       <span class="glyphicon glyphicon-"></span>
       <%= image_tag("icons/chat.png", :alt => "chat + connect") %>
@@ -80,44 +80,56 @@
 </section>
 
 <section class="members container">
-  <span class="glyphicon glyphicon-"></span>
+  <div class="row">
+    <h3 class="feature-title text-center">Some of our members</h3>
+    <span class="glyphicon glyphicon-"></span>
+  </div>
   
-  <h3 class="feature-title text-center">Some of our members</h3>
- 
-  <ul class="text-center">
-    <li>
-      <img src="http://lorempixel.com/220/220/transport" alt="">
-      <br>
-      <%#= image_tag(show_photo('small'), height: "220", width:"220") %><br>
+  <ul class="row">
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <img src="http://lorempixel.com/220/220/transport"></img>
+      <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
       Photo by: <%#= show_author %>
       <h4 class="title members-titles">semf ucuk</h4>
       <p>2017 mustang cobra</p>
     </li>
-    <li>
-      <img src="http://lorempixel.com/220/220/transport" alt="">
-      <br>
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <img src="http://lorempixel.com/220/220/transport"></img>
+      <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
       Photo by: <%#= show_author %>
       <h4 class="title members-titles">semf ucuk</h4>
       <p>1962 Chevy Stepside Pickup</p>
     </li>
-    <li>
-      <img src="http://lorempixel.com/220/220/transport" alt="">
-      <br>
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <img src="http://lorempixel.com/220/220/transport"></img>
+      <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
       Photo by: <%#= show_author %>
       <h4 class="title members-titles">jeng kol</h4>
       <p>2015 BMW 525i M5</p>
     </li>
-    <li>
-      <img src="http://lorempixel.com/220/220/transport" alt="">
-      <br>
+    <li class="col-xs-12 col-sm-6 col-md-3">
+      <img src="http://lorempixel.com/220/220/transport"></img>
+    <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
       Photo by: <%#= show_author %>
       <h4 class="title members-titles">pet romak</h4>
       <p>2016 Jeep Renegade</p>
     </li>
   </ul>
+  
+  <p>Become part of the community</p>
+  <a href="#features"><button id="button-members" class="orange-button">sign up now!</button></a>
+  <br>
+</section>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-  <button class="button" id="button-orange">Register</button>
+<div class="container">
+  <div class="row">
+    <div class="test"></div>
+  </div>
+</div>
+
+
+<section class="questions">
+  
 </section>
 
 <footer>
