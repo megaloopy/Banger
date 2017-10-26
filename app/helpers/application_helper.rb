@@ -14,19 +14,25 @@ module ApplicationHelper
         flash_type.to_s
     end
   end
-  
     
-  # def photo
-  #   Unsplash::Photo.random(query:"cars")
-  # end
+  def photo
+    @photo = Unsplash::Photo.random(query:"cars")
+  end
   
-  # def resized_photo(size)
-  #   photo[:urls][size.to_sym]
-  # end
+  def resized_photo(size)
+    photo[:urls][size.to_sym]
+  end
   
-  # def show_author
-  #   photo.user.name
-  # end
+  def author
+    @photo.user
+  end
   
+  def author_name
+    author.name
+  end
+  
+  def unsplash_profile
+    author.links.html + "?utm_source=over&utm_medium=referral&utm_campaign=api-credit"
+  end
 
 end

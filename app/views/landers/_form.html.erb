@@ -1,0 +1,7 @@
+<%= simple_form_for @user do |f| %>
+  <%= f.input :name, label: 'Your username please', error: 'Username is mandatory, please specify one' %>
+  <%= f.input :email, placeholder: 'user@domain.com' %>
+  <%= f.input :email_subject, inline_label: 'Yes, remember me' %>
+  <%= f.input :contact, inline_label: 'Yes, remember me' %>
+  <%= f.button :submit %>
+<% end %>

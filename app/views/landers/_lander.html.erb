@@ -85,52 +85,63 @@
     <span class="glyphicon glyphicon-"></span>
   </div>
   
-  <ul class="row">
+  <div>
+    <ul class="container"> <!--check on the behavior of this section, had a row before-->
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
-      Photo by: <%#= show_author %>
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">semf ucuk</h4>
       <p>2017 mustang cobra</p>
     </li>
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
-      Photo by: <%#= show_author %>
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">semf ucuk</h4>
       <p>1962 Chevy Stepside Pickup</p>
     </li>
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
-      Photo by: <%#= show_author %>
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">jeng kol</h4>
       <p>2015 BMW 525i M5</p>
     </li>
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-    <%#= image_tag(resized_photo('regular'), height: "220", width:"220") %><br>
-      Photo by: <%#= show_author %>
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">pet romak</h4>
       <p>2016 Jeep Renegade</p>
     </li>
   </ul>
+  </div>
+  
   
   <p>Become part of the community</p>
   <a href="#features"><button id="button-members" class="orange-button">sign up now!</button></a>
   <br>
 </section>
 
-<div class="container">
+<section class="questions container">
   <div class="row">
-    <div class="test"></div>
+    <div class="testimonials col-xs-12 col-md-6">
+      <div class="quote"></div>
+      <div class="testimonial-text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eos officiis voluptatum quas blanditiis. Sapiente, dolore delectus explicabo, quos, reprehenderit repellendus dolor eligendi.
+      </div>
+      <div class="testimonial-name">John Doe</div>
+      <div class="testimonial-title">Professional Title</div>
+    </div>
+    
+    <div class="questions-form col-xs-12 col-md-6">
+      <div class="form-title">Have Questions?</div>
+      
+    </div>
   </div>
-</div>
-
-
-<section class="questions">
-  
 </section>
+
 
 <footer>
   <section id="brand">
