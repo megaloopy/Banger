@@ -11,4 +11,6 @@ Rails.application.routes.draw do
     end
   end
   
+  mount_griddler
+  
 end

@@ -24,7 +24,9 @@ gem "mini_magick"
 gem "figaro"
 gem 'font-awesome-sass'
 gem 'unsplash'
-# gem 'actionmailer', '~> 4.2', '>= 4.2.6'
+# gem 'griddler'
+# gem 'griddler-sendgrid'
+gem 'actionmailer', '~> 4.2', '>= 4.2.5'
 
 
 
