@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
   
+  get 'contacts/new'
+
+  get 'contacts/create'
+
   devise_for :users
   root to: "landers#home"
   
@@ -11,6 +15,7 @@ Rails.application.routes.draw do
     end
   end
   
-  mount_griddler
+  match '/contacts', to: 'contacts#new', via: 'get'
+  resources "contacts", only: [:new, :create]
   
 end
