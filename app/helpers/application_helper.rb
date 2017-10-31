@@ -1,5 +1,5 @@
 module ApplicationHelper
-   
+
   def bootstrap_class_for(flash_type)
     case flash_type
       when "notice"
@@ -7,14 +7,14 @@ module ApplicationHelper
       when "alert"
         "alert-danger"    # Red
       # when "alert"
-      #  "alert-warning"   # Yellow
+      #   "alert-warning"   # Yellow
       # when "info"
-      #  "alert-info"      # Blue
+      #   "alert-info"      # Blue
       else
         flash_type.to_s
     end
   end
-    
+
   def photo
     @photo = Unsplash::Photo.random(query:"cars")
   end
@@ -32,7 +32,7 @@ module ApplicationHelper
   end
   
   def unsplash_profile
-    author.links.html + "?utm_source=over&utm_medium=referral&utm_campaign=api-credit"
+    author.links.html + "?utm_source=Banger_Social_Web_app&utm_medium=referral&utm_campaign=api-credit"
   end
 
 end
