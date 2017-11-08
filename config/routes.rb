@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  
-  get 'contacts/new'
-
-  get 'contacts/create'
 
   devise_for :users
   root to: "landers#home"
@@ -15,7 +11,9 @@ Rails.application.routes.draw do
     end
   end
   
-  match '/contacts', to: 'contacts#new', via: 'get'
-  resources "contacts", only: [:new, :create]
+  resources 'contacts', only: [:new, :create], path_names: { new: '' }
+  if Rails.env.development?
+   mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
   
 end
