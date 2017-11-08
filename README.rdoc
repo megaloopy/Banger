@@ -20,4 +20,7 @@
 - Problems with the unsplash API ... can't get the random picture and
   author name within the same method to make one call in the fron-end
   and pull both pieces of data from the object
-  
+
+10/31/17
+- Installed mail_form: working ... well giving no issues but not sent any mail out in poduction, pushed live but heroku to be
+  down. Needs some styling and integrate it into the landing page.
