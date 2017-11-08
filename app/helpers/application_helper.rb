@@ -15,25 +15,25 @@ module ApplicationHelper
     end
   end
 
-  def photo
-    @photo = Unsplash::Photo.random(query:"cars")
-  end
+  # def photo
+  #   @photo = Unsplash::Photo.random(query:"cars")
+  # end
   
-  def resized_photo(size)
-    photo[:urls][size.to_sym]
-  end
+  # def resized_photo(size)
+  #   photo[:urls][size.to_sym]
+  # end
   
-  def author
-    @photo.user
-  end
+  # def author
+  #   @photo.user
+  # end
   
-  def author_name
-    author.name
-  end
+  # def author_name
+  #   author.name
+  # end
   
-  def unsplash_profile
-    author.links.html + "?utm_source=YOUR_INTEGRATION_NAME&utm_medium=referral&utm_campaign=api-credit"
-    #author.links.html + "?utm_source=Banger_Social_Web_app&utm_medium=referral&utm_campaign=api-credit"
-  end
+  # def unsplash_profile
+  #   #author.links.html + "?utm_source=YOUR_INTEGRATION_NAME&utm_medium=referral&utm_campaign=api-credit"
+  #   #author.links.html + "?utm_source=Banger_Social_Web_app&utm_medium=referral&utm_campaign=api-credit"
+  # end
 
 end
