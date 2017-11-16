@@ -88,30 +88,30 @@
   <div>
     <ul class="container"> <!--check on the behavior of this section, had a row before-->
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
-       <!--<small>Unsplash Photo by: <%#= link_to author_name, unsplash_profile %></small>-->
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("small")), :size => "200x200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">semf ucuk</h4>
       <p>2017 mustang cobra</p>
     </li>
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
-       <!--<small>Unsplash Photo by: <%#= link_to author_name, unsplash_profile %></small>-->
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("small")), :size => "200x200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">semf ucuk</h4>
       <p>1962 Chevy Stepside Pickup</p>
     </li>
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
-       <!--<small>Unsplash Photo by: <%#= link_to author_name, unsplash_profile %></small>-->
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("small")), :size => "200x200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">jeng kol</h4>
       <p>2015 BMW 525i M5</p>
     </li>
     <li class="col-xs-12 col-sm-6 col-md-3">
-      <img src="http://lorempixel.com/220/220/transport"></img>
-      <%#= image_tag (resized_photo("regular")), height: "200", width: "200" %><br>
-       <!--<small>Unsplash Photo by: <%#= link_to author_name, unsplash_profile %></small>-->
+      <!--<img src="http://lorempixel.com/220/220/transport"></img>-->
+      <%= image_tag (resized_photo("small")), :size => "200x200" %><br>
+       <small>Unsplash Photo by: <%= link_to author_name, unsplash_profile %></small>
       <h4 class="title members-titles">pet romak</h4>
       <p>2016 Jeep Renegade</p>
     </li>
@@ -137,7 +137,7 @@
     
     <div class="questions-form col-xs-12 col-md-6">
       <div class="form-title">Have Questions?</div>
-      
+        <%= render 'contacts/new' %>
     </div>
   </div>
 </section>
