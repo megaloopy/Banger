@@ -24,3 +24,8 @@
 10/31/17
 - Installed mail_form: working ... well giving no issues but not sent any mail out in poduction, pushed live but heroku to be
   down. Needs some styling and integrate it into the landing page.
+  
+16/20/17
+- Finished styling form and testimonials of landers.html
+Also tested successfully mailer in dev + prod
+  

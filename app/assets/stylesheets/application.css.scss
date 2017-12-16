@@ -11,6 +11,9 @@
  * file per style scope.
  *
  */
+ 
+$btn-primary-bg: #ff7800;
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "custom";
@@ -19,3 +22,9 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import "landers";
+
+
+abbr[title="required"] {
+  display: none;
+}
+

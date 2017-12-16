@@ -7,6 +7,10 @@ $orange: #ff7800;
 $watch-a-demo-gradient: linear-gradient(0deg,rgba(255,120,0,0.6),rgba(255,120,0,0.6));
 $members-blk: linear-gradient(0deg,rgba(0,0,0,0.75),rgba(0,0,0,0.75));
 
+.fa {
+  color: $orange;
+}
+
 .orange-button {
   margin-top: 50px;
   text-transform: uppercase;
@@ -208,4 +212,45 @@ QUESTIONS SECTION
     height:auto;
     display:block;
     z-index:999;
+}
+
+#form-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  color: #b9b9b9;
+}
+
+.questions-form {
+  padding: 20px;
+}
+
+.testimonials {
+  padding: 86px 50px 0 50px;
+}
+
+.testimonials p {
+  text-align: justify;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.quote {
+  padding-bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonial-name {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+
+.testimonial-title {
+  color: #b9b9b9;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 300;
 }
