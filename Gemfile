@@ -25,6 +25,8 @@ gem "figaro"
 gem 'font-awesome-sass'
 gem 'unsplash'
 gem 'mail_form'
+# gem 'loofah', '~> 2.2.1'
+# gem 'nokogiri', '~> 1.8.1'
 
 
 
